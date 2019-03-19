@@ -1,30 +1,58 @@
+@import 'variables';
+@import 'fonts';
+
+.logo {
+  position: absolute;
+  z-index: 2;
+  top: 17px;
+  left: 32px;
+
+  &-icon {
+    height: 27px;
+    width: 90px;
+  }
+}
+
 .menu {
   position: fixed;
   width: 100%;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #000000;
+  background-color: $white;
+  box-shadow: 0 8px 6px -6px black;
 
   &-main {
-    margin: 0;
     float: right;
+
+    li:hover ul {
+      display: block;
+    }
 
     > li {
       list-style-type: none;
       display: inline;
       float: left;
-      padding: 15px;
+      padding: 0 15px;
+      font-family: Montserrat, sans-serif;
 
       &:not(:last-child) {
-        border-right: 1px solid #ffffff;
+        border-right: 1px solid $black;
+      }
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $black;
+
+        &:hover {
+          color: $red;
+        }
       }
 
       > a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #ffffff;
         padding: 10px;
+        line-height: 30px;
       }
     }
   }
@@ -33,28 +61,19 @@
 .dropdown-menu {
   z-index: 2;
   position: absolute;
-  display: block;
-  background-color: #000;
-  padding-right: 10px;
-  padding: 0 -1px;
-  margin: 15px 0 0 -62px;
+  display: none;
+  background-color: #fff;
+  padding: 0 17px;
+  margin: 0 0 0 -94px;
+  box-shadow: 0 8px 14px -6px black;
 
-  li {
+  > li {
     list-style-type: none;
+    text-align: right;
 
-    a {
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #fff;
-      margin-left: -20px;
-      padding-left: -12px;
-      padding: 0 -46px;
-      line-height: 40px;
-      position: relative;
+    > a {
+      line-height: 35px;
+      padding: 10px;
     }
   }
-}
-
-.menu-main li:hover ul {
-  display: block;
 }
