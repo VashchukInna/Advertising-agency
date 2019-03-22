@@ -3,7 +3,7 @@
 
 .logo {
   position: fixed;
-  z-index: 2;
+  z-index: 1;
   top: 17px;
   left: 32px;
 
@@ -16,7 +16,6 @@
 .menu {
   position: fixed;
   width: 100%;
-  z-index: 1;
   top: 0;
   left: 0;
   background-color: $white;
@@ -59,7 +58,7 @@
 }
 
 .dropdown-menu {
-  z-index: 2;
+  z-index: 1;
   position: absolute;
   display: none;
   background-color: $white;

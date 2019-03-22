@@ -1,0 +1,93 @@
+@import 'variables';
+
+.slider {
+  > input {
+    display: none;
+  }
+
+  &-images {
+    width: 100%;
+    overflow: hidden;
+
+    .images {
+      width: 500%;
+
+      > article {
+        width: 20%;
+        float: left;
+
+        > img {
+          width: 100%;
+          height: 700px;
+        }
+      }
+    }
+  }
+
+  &-previous-next-label {
+    margin: -32% 0 0 0;
+  }
+
+  &-previous-next-label > label, &-label > label {
+    cursor: pointer;
+  }
+
+  &-previous-next-label label:hover {
+    opacity: 0.7;
+  }
+
+  #first-slide:checked ~ &-previous-next-label label:nth-child(3),
+  #second-slide:checked ~ &-previous-next-label label:nth-child(1),
+  #third-slide:checked ~ &-previous-next-label label:nth-child(2) {
+    background-image: url('../../images/left-arrow.png');
+    background-repeat: no-repeat;
+    float: left;
+    height: 100px;
+    width: 100px;
+  }
+
+  #first-slide:checked ~ &-previous-next-label label:nth-child(2),
+  #second-slide:checked ~ &-previous-next-label label:nth-child(3),
+  #third-slide:checked ~ &-previous-next-label label:nth-child(1) {
+    background-image: url('../../images/right-arrow.png');
+    background-repeat: no-repeat;
+    float: right;
+    height: 100px;
+    width: 100px;
+  }
+
+  #first-slide:checked ~ &-images .images {
+    margin-left: 0;
+  }
+
+  #second-slide:checked ~ &-images .images {
+    margin-left: -100%;
+  }
+
+  #third-slide:checked ~ &-images .images {
+    margin-left: -200%;
+  }
+
+  &-label {
+    margin: 30% 0 0;
+    text-align: center;
+
+    > label {
+      border-radius: 10px;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background: $grey;
+
+      &:hover {
+        background: $red;
+      }
+    }
+  }
+
+  #first-slide:checked ~ &-label label:nth-child(1),
+  #second-slide:checked ~ &-label label:nth-child(2),
+  #third-slide:checked ~ &-label label:nth-child(3) {
+    background: $burgundy;
+  }
+}

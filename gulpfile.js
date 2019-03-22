@@ -25,9 +25,10 @@ gulp.task('sass', function () {
 });
 
 gulp.task('images', function () {
+    del(['./dist/images/*']);
     return gulp.src('src/images/**/*.+(png|jpg|gif|svg)')
         .pipe(cache(imagemin()))
-        .pipe(gulp.dest('dist/images'))
+        .pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('fonts', function () {
