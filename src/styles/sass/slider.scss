@@ -26,14 +26,14 @@
 
   &-previous-next-label {
     margin: -32% 0 0 0;
+
+    > label:hover {
+      opacity: 0.7;
+    }
   }
 
   &-previous-next-label > label, &-label > label {
     cursor: pointer;
-  }
-
-  &-previous-next-label label:hover {
-    opacity: 0.7;
   }
 
   #first-slide:checked ~ &-previous-next-label label:nth-child(3),
@@ -42,6 +42,7 @@
     background-image: url('../../images/left-arrow.png');
     background-repeat: no-repeat;
     float: left;
+    margin-left: 30px;
     height: 100px;
     width: 100px;
   }
@@ -69,18 +70,18 @@
   }
 
   &-label {
-    margin: 30% 0 0;
+    margin: 27% 0 0;
     text-align: center;
 
     > label {
-      border-radius: 10px;
+      border-radius: 50%;
       display: inline-block;
-      width: 15px;
-      height: 15px;
-      background: $grey;
+      width: 20px;
+      height: 20px;
+      background-color: $grey;
 
       &:hover {
-        background: $red;
+        background-color: $light-burgundy;
       }
     }
   }
@@ -88,6 +89,6 @@
   #first-slide:checked ~ &-label label:nth-child(1),
   #second-slide:checked ~ &-label label:nth-child(2),
   #third-slide:checked ~ &-label label:nth-child(3) {
-    background: $burgundy;
+    background-color: $burgundy;
   }
 }
