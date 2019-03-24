@@ -1,0 +1,39 @@
+@import 'variables';
+@import 'fonts';
+
+.footer {
+  background-color: $dark-blue;
+  padding: 15px;
+
+  &-info {
+    margin-top: 90px;
+    text-align: center;
+
+    > p {
+      font-family: Montserrat, sans-serif;
+      color: $white;
+
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+    }
+  }
+
+  .social-icons {
+    width: 345px;
+    margin: 0 auto;
+
+    li {
+      display: inline-block;
+      list-style-type: none;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 5px;
+      }
+    }
+  }
+}
