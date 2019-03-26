@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Advertising agency</title>
+    <link rel="stylesheet" href="./styles/css/style.min.css">
+</head>
+<body>
+<header class="header">
+    <a href="#home" class="logo">
+        <img src="./images/logo.png" alt="logo" class="logo-icon">
+    </a>
+    <label for="hamburger-menu" class="hamburger-menu">&#9776;</label>
+    <input type="checkbox" id="hamburger-menu"/>
+    <nav class="menu">
+        <ul class="menu-main">
+            <li><a href="#">About</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#about-us">About us</a></li>
+                    <li><a href="#our-products">Our products</a></li>
+                </ul>
+            </li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#place-your-order">Place your order</a></li>
+        </ul>
+    </nav>
+
+    <div class="slider">
+        <input type=radio id="first-slide" name="slider-selector" checked/>
+        <input type=radio id="second-slide" name="slider-selector"/>
+        <input type=radio id="third-slide" name="slider-selector"/>
+        <div class="slider-images">
+            <div class="images">
+                <article><img src="images/slider-1.jpg" alt="Photo-1"></article>
+                <article><img src="images/slider-2.jpg" alt="Photo-2"></article>
+                <article><img src="images/slider-3.jpg" alt="Photo-3"></article>
+            </div>
+        </div>
+
+        <div class="slider-previous-next-label">
+            <label for="first-slide"></label>
+            <label for="second-slide"></label>
+            <label for="third-slide"></label>
+        </div>
+
+        <div class="slider-label">
+            <label for="first-slide"></label>
+            <label for="second-slide"></label>
+            <label for="third-slide"></label>
+        </div>
+    </div>
+</header>
+<main id="main-content"></main>
+<footer class="footer">
+    <div class="footer-info">
+        <p>Copyright © 2019 by
+            <a href="https://github.com/VashchukInna" target="_blank" class="author-link">Inna
+                Vashchuk</a></p>
+    </div>
+    <div class="social-icons">
+        <ul class="icons">
+            <li><a href="https://github.com/VashchukInna" target="_blank">
+                <img src="images/social-icon-github.png" alt="github-icon" class="github-icon"></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/innavashchuk" target="_blank">
+                <img src="images/social-icon-linkedIn.png" alt="linkedIn-icon" class="linkedIn-icon"></a>
+            </li>
+            <li><a href="#" target="_blank">
+                <img src="images/social-icon-facebook.png" alt="facebook-icon" class="facebook-icon"></a>
+            </li>
+            <li><a href="#" target="_blank">
+                <img src="images/social-icon-instagram.png" alt="instagram-icon" class="instagram-icon"></a>
+            </li>
+            <li><a href="#" target="_blank">
+                <img src="images/social-icon-twitter.png" alt="twitter-icon" class="twitter-icon"></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<script src="./js/script.js"></script>
+</body>
+</html>
