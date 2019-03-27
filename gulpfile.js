@@ -10,7 +10,7 @@ let gulp = require('gulp'),
     del = require('del'),
     babel = require('gulp-babel');
 
-gulp.task('sass', function () {
+gulp.task('sass', () => {
     return gulp.src('src/styles/sass/style.scss')
         .pipe(sass())
         .pipe(autoprefixer({
@@ -25,19 +25,19 @@ gulp.task('sass', function () {
         }))
 });
 
-gulp.task('images', function () {
+gulp.task('images', () => {
     del(['./dist/images/*']);
     return gulp.src('src/images/**/*.+(png|jpg|gif|svg)')
         .pipe(cache(imagemin()))
         .pipe(gulp.dest('dist/images'));
 });
 
-gulp.task('fonts', function () {
+gulp.task('fonts', () => {
     return gulp.src('src/fonts/**/*')
         .pipe(gulp.dest('dist/fonts'))
 });
 
-gulp.task('scripts', function () {
+gulp.task('scripts', () => {
         return gulp.src('src/js/script.js')
             .pipe(babel({
                 presets: ['@babel/preset-env']
@@ -51,7 +51,7 @@ gulp.task('scripts', function () {
     }
 );
 
-gulp.task('html', function () {
+gulp.task('html', () => {
     return gulp.src('src/*.html')
         .pipe(gulp.dest('dist'))
         .pipe(browserSync.reload({
@@ -59,15 +59,15 @@ gulp.task('html', function () {
         }))
 });
 
-gulp.task('clean:dist', function () {
+gulp.task('clean:dist', () => {
     return del.sync('dist');
 });
 
-gulp.task('cache:clear', function () {
+gulp.task('cache:clear', () => {
     return cache.clearAll();
 });
 
-gulp.task('browser-sync', function () {
+gulp.task('browser-sync', () => {
     browserSync.init({
         server: {
             baseDir: 'src'
@@ -76,7 +76,7 @@ gulp.task('browser-sync', function () {
     });
 });
 
-gulp.task('watch', function () {
+gulp.task('watch', () => {
     gulp.watch('src/styles/sass/**/*.scss', gulp.series('sass'), browserSync.reload);
     gulp.watch('src/*.html', gulp.series('html'), browserSync.reload);
     gulp.watch('src/js/script.js', gulp.series('scripts'), browserSync.reload);
