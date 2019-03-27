@@ -7,7 +7,8 @@ let gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     imagemin = require('gulp-imagemin'),
     cache = require('gulp-cache'),
-    del = require('del');
+    del = require('del'),
+    babel = require('gulp-babel');
 
 gulp.task('sass', function () {
     return gulp.src('src/styles/sass/style.scss')
@@ -37,14 +38,18 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('scripts', function () {
-    return gulp.src('src/js/script.js')
-        .pipe(concat('script.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('dist/js'))
-        .pipe(browserSync.reload({
-            stream: true
-        }))
-});
+        return gulp.src('src/js/script.js')
+            .pipe(babel({
+                presets: ['@babel/preset-env']
+            }))
+            .pipe(concat('script.min.js'))
+            .pipe(uglify())
+            .pipe(gulp.dest('src/js'))
+            .pipe(browserSync.reload({
+                stream: true
+            }))
+    }
+);
 
 gulp.task('html', function () {
     return gulp.src('src/*.html')
