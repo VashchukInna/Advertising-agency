@@ -21,11 +21,13 @@
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
+    "babelify": "^10.0.0",
     "browser-sync": "^2.26.3",
     "del": "^4.0.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-babel": "^8.0.0",
+    "gulp-browserify": "^0.5.1",
     "gulp-cache": "^1.1.1",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.3",

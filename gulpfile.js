@@ -8,7 +8,7 @@ let gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     cache = require('gulp-cache'),
     del = require('del'),
-    babel = require('gulp-babel');
+    browserify = require('gulp-browserify');
 
 gulp.task('sass', () => {
     return gulp.src('src/styles/sass/style.scss')
@@ -38,18 +38,15 @@ gulp.task('fonts', () => {
 });
 
 gulp.task('scripts', () => {
-        return gulp.src('src/js/script.js')
-            .pipe(babel({
-                presets: ['@babel/preset-env']
-            }))
-            .pipe(concat('script.min.js'))
-            .pipe(uglify())
-            .pipe(gulp.dest('src/js'))
-            .pipe(browserSync.reload({
-                stream: true
-            }))
-    }
-);
+    return gulp.src('src/js/script.js')
+        .pipe(browserify({transform: ['babelify']}))
+        .pipe(concat('script.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('src/js'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
+});
 
 gulp.task('html', () => {
     return gulp.src('src/*.html')

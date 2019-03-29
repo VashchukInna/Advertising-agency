@@ -8,24 +8,25 @@
 </head>
 <body>
 <header class="header">
-    <a href="#home" class="logo">
-        <img src="./images/logo.png" alt="logo" class="logo-icon">
-    </a>
     <label for="hamburger-menu" class="hamburger-menu">&#9776;</label>
     <input type="checkbox" id="hamburger-menu"/>
     <nav class="menu">
         <ul class="menu-main">
+            <li><a href="#home" class="logo link">
+                <img src="./images/logo.png" alt="logo" class="logo-icon">
+            </a>
+            </li>
             <li><a href="#">About</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#about-us">About us</a></li>
-                    <li><a href="#our-products">Our products</a></li>
+                    <li><a href="#about-us" class="link">About us</a></li>
+                    <li><a href="#our-products" class="link">Our products</a></li>
                 </ul>
             </li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#clients">Clients</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#place-your-order">Place your order</a></li>
+            <li><a href="#services" class="link">Services</a></li>
+            <li><a href="#portfolio" class="link">Portfolio</a></li>
+            <li><a href="#clients" class="link">Clients</a></li>
+            <li><a href="#contact" class="link">Contact</a></li>
+            <li><a href="#place-your-order" class="link">Place your order</a></li>
         </ul>
     </nav>
 
@@ -54,7 +55,10 @@
         </div>
     </div>
 </header>
-<main id="main-content"></main>
+<main id="main-content">
+    <div id="portfolio" class="content">Portfolio</div>
+    <div id="clients" class="content">Clients</div>
+</main>
 <footer class="footer">
     <div class="footer-info">
         <p>Copyright © 2019 by
