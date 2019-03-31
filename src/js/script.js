@@ -1,3 +1,5 @@
+import {openModalWindow, closeModalWindow} from './portfolio';
+
 //show/hide content when clicking on a link
 
 document.querySelectorAll('.link').forEach(_element => _element.addEventListener('click', function (e) {

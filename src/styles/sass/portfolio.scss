@@ -1,0 +1,51 @@
+@import 'variables';
+
+.portfolio-section {
+  margin-top: 73px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: $grey;
+
+  .project {
+    display: inline-flex;
+
+    &-image {
+      width: 300px;
+      height: 300px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+.modal-window {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  &-inner {
+    background: $white;
+    width: 650px;
+    padding: 15px;
+    position: relative;
+
+    .close-window {
+      cursor: pointer;
+      position: absolute;
+      top: 3px;
+      right: 10px;
+      background: none;
+      border: 0;
+    }
+  }
+}
+
+.open-modal-window {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
