@@ -6,7 +6,7 @@ const modalWindowImage = document.querySelector('.modal-window-image');
 
 export function openModalWindow(_) {
     modalWindow.classList.add('open-modal-window');
-    modalWindowImage.src = _.currentTarget.querySelector('.modal-window-image').src;
+    modalWindowImage.src = _.currentTarget.querySelector('.project-image').src;
 }
 
 export function closeModalWindow() {

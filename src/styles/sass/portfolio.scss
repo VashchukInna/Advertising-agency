@@ -1,45 +1,72 @@
 @import 'variables';
+@import 'fonts';
 
 .portfolio-section {
   margin-top: 73px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: $grey;
+  background-color: $white;
 
   .project {
     display: inline-flex;
+    position: relative;
 
     &-image {
       width: 300px;
       height: 300px;
       margin: 5px;
       cursor: pointer;
+      filter: brightness(50%);
+
+      &:hover {
+        filter: brightness(100%);
+      }
+
+    }
+
+    .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: Montserrat, sans-serif;
+      font-weight: bold;
+      font-size: 120%;
+      color: $white;
+      text-transform: uppercase;
     }
   }
 }
 
 .modal-window {
   position: fixed;
+  background: rgba($black, 0.6);
   display: none;
-  top: 0;
+  top: 55px;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 2;
 
   &-inner {
-    background: $white;
-    width: 650px;
-    padding: 15px;
     position: relative;
+    background-color: $dark-grey;
+    width: 51.5%;
+    padding: 15px;
 
     .close-window {
-      cursor: pointer;
       position: absolute;
-      top: 3px;
-      right: 10px;
+      cursor: pointer;
+      top: 1px;
+      right: 0;
       background: none;
       border: 0;
+      outline: none;
+    }
+
+    .modal-window-image {
+      width: 100%;
     }
   }
 }
