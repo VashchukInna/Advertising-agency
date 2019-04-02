@@ -1,4 +1,4 @@
-import {openModalWindow, closeModalWindow} from './portfolio';
+import {gallery, openModalWindow, closeModalWindow} from './gallery';
 
 //show/hide content when clicking on a link
 
