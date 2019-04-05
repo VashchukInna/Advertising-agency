@@ -1,6 +1,7 @@
 import {gallery, openModalWindow, closeModalWindow} from './gallery';
+import {toggleCheckbox, getChecked, intersection, displayProject} from './filter';
 
-//show/hide content when clicking on a link
+// show/hide content when clicking on a link
 
 document.querySelectorAll('.link').forEach(_element => _element.addEventListener('click', function (e) {
     e.preventDefault();

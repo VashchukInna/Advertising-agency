@@ -14,7 +14,7 @@ export function gallery() {
     function project() {
         for (let i = 0; i < images.length; i++) {
             let project = document.createElement('div');
-            project.setAttribute('class', 'project');
+            project.setAttribute('class', `project ${images[i].filter}`);
             portfolioSection.appendChild(project);
 
             let projectImage = document.createElement('img');
@@ -54,7 +54,7 @@ export function gallery() {
 
 gallery();
 
-//open/close modal window
+// open/close modal window
 
 const image = document.querySelectorAll('.project');
 const modalWindow = document.querySelector('.modal-window');

@@ -2,133 +2,89 @@
   {
     "id": 1,
     "src": "../../images/gallery/outdoor-advertising-advertising-booklet.jpg",
-    "filter": {
-      "design": false,
-      "outdoor-advertising": true,
-      "polygraphy": false,
-      "advertising": true
-    },
+    "filter": [
+      "outdoorAdvertising advertising"
+    ],
     "title": "Booklets"
   },
   {
     "id": 2,
     "src": "../../images/gallery/design-cup.jpg",
-    "filter": {
-      "design": true,
-      "outdoor-advertising": false,
-      "polygraphy": false,
-      "advertising": false
-    },
+    "filter": "design",
     "title": "Cups"
   },
   {
     "id": 3,
     "src": "../../images/gallery/design-polygraphy-calendar.jpg",
-    "filter": {
-      "design": true,
-      "outdoor-advertising": false,
-      "polygraphy": true,
-      "advertising": false
-    },
+    "filter": [
+      "design polygraphy"
+    ],
     "title": "Calendars"
   },
   {
     "id": 4,
     "src": "../../images/gallery/outdoor-advertising-advertising-business-card.jpg",
-    "filter": {
-      "design": false,
-      "outdoor-advertising": true,
-      "polygraphy": false,
-      "advertising": true
-    },
+    "filter": [
+      "outdoorAdvertising advertising"
+    ],
     "title": "Business Cards"
   },
   {
     "id": 5,
     "src": "../../images/gallery/design-logo.jpg",
-    "filter": {
-      "design": true,
-      "outdoor-advertising": false,
-      "polygraphy": false,
-      "advertising": false
-    },
+    "filter": "design",
     "title": "Logos"
   },
   {
     "id": 6,
     "src": "../../images/gallery/outdoor-advertising-advertising-flyer.jpg",
-    "filter": {
-      "design": false,
-      "outdoor-advertising": true,
-      "polygraphy": false,
-      "advertising": true
-    },
+    "filter": [
+      "outdoorAdvertising advertising"
+    ],
     "title": "Flyers"
   },
   {
     "id": 7,
     "src": "../../images/gallery/design-pen.jpg",
-    "filter": {
-      "design": true,
-      "outdoor-advertising": false,
-      "polygraphy": false,
-      "advertising": false
-    },
+    "filter": "design",
     "title": "Pens"
   },
   {
     "id": 8,
     "src": "../../images/gallery/design-polygraphy-notebook.jpg",
-    "filter": {
-      "design": true,
-      "outdoor-advertising": false,
-      "polygraphy": true,
-      "advertising": false
-    },
+    "filter": [
+      "design polygraphy"
+    ],
     "title": "Notebooks"
   },
   {
     "id": 9,
     "src": "../../images/gallery/design-outdoor-advertising-billboard.jpg",
-    "filter": {
-      "design": true,
-      "outdoor-advertising": true,
-      "polygraphy": false,
-      "advertising": false
-    },
+    "filter": [
+      "design outdoorAdvertising"
+    ],
     "title": "Billboards"
   },
   {
     "id": 10,
     "src": "../../images/gallery/outdoor-advertising-poster.jpg",
-    "filter": {
-      "design": false,
-      "outdoor-advertising": true,
-      "polygraphy": false,
-      "advertising": false
-    },
+    "filter": "outdoorAdvertising",
     "title": "Posters"
   },
   {
     "id": 11,
     "src": "../../images/gallery/design-polygraphy-catalog.jpg",
-    "filter": {
-      "design": true,
-      "outdoor-advertising": false,
-      "polygraphy": true,
-      "advertising": false
-    },
+    "filter": [
+      "design polygraphy"
+    ],
     "title": "Catalogs"
   },
   {
     "id": 12,
     "src": "../../images/gallery/design-polygraphy-menu.jpg",
-    "filter": {
-      "design": true,
-      "outdoor-advertising": false,
-      "polygraphy": true,
-      "advertising": false
-    },
+    "filter": [
+      "design polygraphy"
+    ],
     "title": "Menus"
   }
 ]
