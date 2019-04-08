@@ -1,5 +1,5 @@
-import {gallery, openModalWindow, closeModalWindow} from './gallery';
-import {toggleCheckbox, getChecked, intersection, displayProject} from './filter';
+import './gallery';
+import './filter';
 
 // show/hide content when clicking on a link
 

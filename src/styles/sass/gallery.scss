@@ -33,6 +33,7 @@
       font-size: 120%;
       color: $white;
       text-transform: uppercase;
+      user-select: none;
     }
   }
 }
@@ -49,7 +50,7 @@
 
   &-inner {
     position: relative;
-    background-color: $dark-grey;
+    background-color: $silver;
     width: 51.5%;
     padding: 15px;
 

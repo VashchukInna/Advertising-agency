@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'fonts';
+
+.portfolio-filter {
+  position: relative;
+  text-align: right;
+  padding: 20px;
+  background-color: $dark-blue;
+
+  input[type='checkbox'] {
+    display: none;
+
+    &:checked + label {
+      border: 2px solid $cyan;
+      background-color: $dark-cyan;
+      color: $white;
+
+      &::before {
+        content: '\2714';
+      }
+    }
+  }
+
+  label {
+    font-family: Montserrat, sans-serif;
+    display: inline-block;
+    background-color: $light-grey;
+    border: 2px solid $dark-grey;
+    color: $grey;
+    border-radius: 15px;
+    margin: 3px 3px;
+    padding: 8px 13px;
+    cursor: pointer;
+    user-select: none;
+
+    &::before {
+      content: '\271A';
+      padding: 2px 6px 2px 2px;
+    }
+  }
+}

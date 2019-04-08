@@ -1,12 +1,69 @@
 import images from './data/gallery';
 
-export function gallery() {
+export function filter() {
     let main = document.getElementById('main-content');
     let portfolio = document.createElement('div');
     portfolio.setAttribute('id', 'portfolio');
     portfolio.setAttribute('class', 'content');
     main.appendChild(portfolio);
 
+    let filter = document.createElement('div');
+    filter.setAttribute('class', 'portfolio-filter');
+    portfolio.appendChild(filter);
+
+    let checkboxDesign = document.createElement('input');
+    checkboxDesign.setAttribute('type', 'checkbox');
+    checkboxDesign.setAttribute('name', 'design');
+    checkboxDesign.setAttribute('value', 'design');
+    checkboxDesign.setAttribute('id', 'design');
+    filter.appendChild(checkboxDesign);
+
+    let labelDesign = document.createElement('label');
+    labelDesign.setAttribute('for', 'design');
+    labelDesign.innerHTML = 'Design';
+    filter.appendChild(labelDesign);
+
+    let checkboxOutdoorAdvertising = document.createElement('input');
+    checkboxOutdoorAdvertising.setAttribute('type', 'checkbox');
+    checkboxOutdoorAdvertising.setAttribute('name', 'outdoorAdvertising');
+    checkboxOutdoorAdvertising.setAttribute('value', 'outdoorAdvertising');
+    checkboxOutdoorAdvertising.setAttribute('id', 'outdoorAdvertising');
+    filter.appendChild(checkboxOutdoorAdvertising);
+
+    let labelOutdoorAdvertising = document.createElement('label');
+    labelOutdoorAdvertising.setAttribute('for', 'outdoorAdvertising');
+    labelOutdoorAdvertising.innerHTML = 'Outdoor Advertising';
+    filter.appendChild(labelOutdoorAdvertising);
+
+    let checkboxPolygraphy = document.createElement('input');
+    checkboxPolygraphy.setAttribute('type', 'checkbox');
+    checkboxPolygraphy.setAttribute('name', 'polygraphy');
+    checkboxPolygraphy.setAttribute('value', 'polygraphy');
+    checkboxPolygraphy.setAttribute('id', 'polygraphy');
+    filter.appendChild(checkboxPolygraphy);
+
+    let labelPolygraphy = document.createElement('label');
+    labelPolygraphy.setAttribute('for', 'polygraphy');
+    labelPolygraphy.innerHTML = 'Polygraphy';
+    filter.appendChild(labelPolygraphy);
+
+    let checkboxAdvertising = document.createElement('input');
+    checkboxAdvertising.setAttribute('type', 'checkbox');
+    checkboxAdvertising.setAttribute('name', 'advertising');
+    checkboxAdvertising.setAttribute('value', 'advertising');
+    checkboxAdvertising.setAttribute('id', 'advertising');
+    filter.appendChild(checkboxAdvertising);
+
+    let labelAdvertising = document.createElement('label');
+    labelAdvertising.setAttribute('for', 'advertising');
+    labelAdvertising.innerHTML = 'Advertising';
+    filter.appendChild(labelAdvertising);
+}
+
+filter();
+
+export function gallery() {
+    let portfolio = document.getElementById('portfolio');
     let portfolioSection = document.createElement('div');
     portfolioSection.setAttribute('class', 'portfolio-section');
     portfolio.appendChild(portfolioSection);
