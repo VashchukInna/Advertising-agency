@@ -66,6 +66,7 @@ export function gallery() {
     let portfolio = document.getElementById('portfolio');
     let portfolioSection = document.createElement('div');
     portfolioSection.setAttribute('class', 'portfolio-section');
+    portfolioSection.setAttribute('id', 'portfolio-section');
     portfolio.appendChild(portfolioSection);
 
     function project() {
@@ -128,3 +129,30 @@ export function closeModalWindow() {
 
 image.forEach(image => image.addEventListener('click', openModalWindow));
 modalWindow.addEventListener('click', closeModalWindow);
+
+export function pagination() {
+    let portfolio = document.getElementById('portfolio');
+    let pagination = document.createElement('div');
+    pagination.setAttribute('class', 'portfolio-pagination');
+    portfolio.appendChild(pagination);
+
+    let paginationBlock = document.createElement('div');
+    paginationBlock.setAttribute('class', 'pagination');
+    pagination.appendChild(paginationBlock);
+
+    let buttonPrev = document.createElement('span');
+    buttonPrev.setAttribute('id', 'button-prev');
+    buttonPrev.innerHTML = 'Prev';
+    paginationBlock.appendChild(buttonPrev);
+
+    let pageNumber = document.createElement('span');
+    pageNumber.setAttribute('id', 'page-number');
+    paginationBlock.appendChild(pageNumber);
+
+    let buttonNext = document.createElement('span');
+    buttonNext.setAttribute('id', 'button-next');
+    buttonNext.innerHTML = 'Next';
+    paginationBlock.appendChild(buttonNext);
+}
+
+pagination();

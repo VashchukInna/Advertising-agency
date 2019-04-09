@@ -1,5 +1,6 @@
 import './gallery';
 import './filter';
+import './pagination';
 
 // show/hide content when clicking on a link
 
