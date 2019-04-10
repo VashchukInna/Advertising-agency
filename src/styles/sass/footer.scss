@@ -2,11 +2,12 @@
 @import 'fonts';
 
 .footer {
+  position: absolute;
   background-color: $dark-blue;
-  padding: 15px;
+  width: 100%;
 
   &-info {
-    margin-top: 90px;
+    padding-top: 20px;
     text-align: center;
 
     > p {

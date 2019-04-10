@@ -2,10 +2,7 @@
 @import 'fonts';
 
 .portfolio-filter {
-  position: relative;
-  text-align: right;
-  padding: 20px;
-  background-color: $dark-blue;
+  display: inline-block;
 
   input[type='checkbox'] {
     display: none;

@@ -1,15 +1,39 @@
 import images from './data/gallery';
 
-export function filter() {
+export function search() {
     let main = document.getElementById('main-content');
     let portfolio = document.createElement('div');
     portfolio.setAttribute('id', 'portfolio');
     portfolio.setAttribute('class', 'content');
     main.appendChild(portfolio);
 
+
+    let portfolioSearchFilter = document.createElement('div');
+    portfolioSearchFilter.setAttribute('class', 'portfolio-search-filter');
+    portfolio.appendChild(portfolioSearchFilter);
+
+    let portfolioSearch = document.createElement('div');
+    portfolioSearch.setAttribute('class', 'portfolio-search');
+    portfolioSearchFilter.appendChild(portfolioSearch);
+
+    let inputSearch = document.createElement('input');
+    inputSearch.setAttribute('type', 'text');
+    inputSearch.setAttribute('id', 'search');
+    inputSearch.setAttribute('placeholder', 'Search');
+    portfolioSearch.appendChild(inputSearch);
+
+    let labelSearch = document.createElement('label');
+    labelSearch.setAttribute('for', 'search');
+    portfolioSearch.appendChild(labelSearch);
+}
+
+search();
+
+export function filter() {
+    let portfolioSearchFilter = document.querySelector('.portfolio-search-filter');
     let filter = document.createElement('div');
     filter.setAttribute('class', 'portfolio-filter');
-    portfolio.appendChild(filter);
+    portfolioSearchFilter.appendChild(filter);
 
     let checkboxDesign = document.createElement('input');
     checkboxDesign.setAttribute('type', 'checkbox');

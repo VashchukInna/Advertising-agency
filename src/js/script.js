@@ -1,4 +1,5 @@
 import './gallery';
+import './search';
 import './filter';
 import './pagination';
 

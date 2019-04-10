@@ -1,0 +1,38 @@
+@import 'variables';
+@import 'fonts';
+
+.portfolio-search-filter {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  background-color: $desaturated-dark-blue;
+
+  .portfolio-search {
+    display: inline-block;
+    margin: 3px 3px;
+    padding: 8px 13px;
+
+    input {
+      font-family: Montserrat, sans-serif;
+      outline: none;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid $light-grey;
+      font-size: 18px;
+      height: 30px;
+
+      &::placeholder {
+        color: $light-grey;
+      }
+
+      &:focus {
+        border-bottom: 2px solid $dark-cyan;
+      }
+
+      &:focus::placeholder {
+        color: $dark-cyan;
+        transition: all 0.2s linear;
+      }
+    }
+  }
+}
