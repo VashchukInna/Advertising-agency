@@ -1,0 +1,27 @@
+@import 'variables';
+@import 'fonts';
+
+.portfolio-pagination {
+  text-align: center;
+
+  #button-prev, #button-next, .page-number {
+    font-family: Montserrat, sans-serif;
+    display: inline-block;
+    border-radius: 15px;
+    margin: 3px 3px;
+    padding: 8px 13px;
+    cursor: pointer;
+    user-select: none;
+    background-color: $dark-cyan;
+    border: 2px solid $cyan;
+    color: $white;
+  }
+
+  #button-prev.opacity, #button-next.opacity {
+    color: $grey;
+  }
+
+  .opacity {
+    opacity: 0.5;
+  }
+}

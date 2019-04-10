@@ -56,12 +56,12 @@ function Pagination() {
     };
 
     let checkButtonOpacity = () => {
-        currentPage === 1 ? prevButton.classList.add('opacity') : prevButton.classList.remove('opacity');
-        currentPage === numberOfPages() ? nextButton.classList.add('opacity') : nextButton.classList.remove('opacity');
+        currentPage == 1 ? prevButton.classList.add('opacity') : prevButton.classList.remove('opacity');
+        currentPage == numberOfPages() ? nextButton.classList.add('opacity') : nextButton.classList.remove('opacity');
     };
 
     let selectedPage = () => {
-        let pageNumber = document.getElementById('page-number').getElementsByClassName('clicked-page-number');
+        let pageNumber = document.getElementById('page-number').getElementsByClassName('page-number');
         for (let i = 0; i < pageNumber.length; i++) {
             if (i === currentPage - 1) {
                 pageNumber[i].style.opacity = '1.0';
@@ -76,13 +76,13 @@ function Pagination() {
         pageNumber.innerHTML = '';
 
         for (let i = 1; i < numberOfPages() + 1; i++) {
-            pageNumber.innerHTML += '<span class="clicked-page-number">' + i + '</span>';
+            pageNumber.innerHTML += '<span class="page-number">' + i + '</span>';
         }
     };
 
     let clickPage = () => {
         document.addEventListener('click', function (e) {
-            if (e.target.nodeName === 'SPAN' && e.target.classList.contains('clicked-page-number')) {
+            if (e.target.nodeName === 'SPAN' && e.target.classList.contains('page-number')) {
                 currentPage = e.target.textContent;
                 pageOffset(currentPage);
             }
