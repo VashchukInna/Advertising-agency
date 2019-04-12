@@ -1,3 +1,4 @@
+import './services';
 import './gallery';
 import './search';
 import './filter';
