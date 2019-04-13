@@ -1,46 +1,55 @@
 [
   {
     "id": 1,
+    "src": "../../images/services-icon-1.png",
     "title": "Brand Design & Identity",
     "description": "It’s more than just colors and typefaces. Although the properly chosen combination can help you create a personality and tone of voice that will set you apart meaningfully from your competition."
   },
   {
     "id": 2,
+    "src": "../../images/services-icon-2.png",
     "title": "Promotional Marketing",
     "description": "The line is blurring between advertising and promotions budgets. Through our experiential approach, our goal is to create engagement and experiences that don’t just express the essence of your brand, but also shorten the distance between impression and sales.\n"
   },
   {
     "id": 3,
+    "src": "../../images/services-icon-3.png",
     "title": "Brand Strategy",
     "description": "A clearly defined strategy tells the world what you stand for, allows you to stand out from your competitors and even helps you make decisions on developing new products and services."
   },
   {
     "id": 4,
+    "src": "../../images/services-icon-4.png",
     "title": "Media Services",
     "description": "Connecting the marketing message with your target is no easy task. It’s about reaching the right audiences when and where they are most likely to engage with your brand. Our media campaigns support brand strategies with effective and efficient solutions and measurable results.\n"
   },
   {
     "id": 5,
+    "src": "../../images/services-icon-5.png",
     "title": "Websites & Apps",
     "description": "We create a dynamic viewing experience for easy reading and navigation. Think can design and develop a wide variety of responsive websites as well as custom mobile applications for any device or platform."
   },
   {
     "id": 6,
+    "src": "../../images/services-icon-6.png",
     "title": "Trade Marketing",
     "description": "Does your agency understand the difference between your brand’s consumers and its customers? At Think, we work to build and strengthen necessary trade partnerships to ensure brands and products have the distribution and allies that drive turnover."
   },
   {
     "id": 7,
+    "src": "../../images/services-icon-7.png",
     "title": "Shopper Marketing",
     "description": "Customers are using smartphones to check for offers and shopping tips, and are sharing them with their friends on social networks. We place the shopper at the center of every strategic decision to create powerful connections between your brand and your customers."
   },
   {
     "id": 8,
+    "src": "../../images/services-icon-8.png",
     "title": "Social Media",
     "description": "Social media marketing is no longer just about counting “likes.” It’s about tailoring your brand message to the places where your customers spend their time. We incorporate social media into an overall content strategy, creating authentic conversations that are relevant to your brand."
   },
   {
     "id": 9,
+    "src": "../../images/services-icon-9.png",
     "title": "Reputation Management",
     "description": "A disconnect between brand positioning and reputation creates a barrier to success and growth. We have broad experience helping organizations of all sizes enhance public trust, thereby protecting enterprise value."
   }

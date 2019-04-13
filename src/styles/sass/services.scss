@@ -1,0 +1,35 @@
+@import 'variables';
+@import 'fonts';
+
+.services-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: $blue-lagoon;
+  width: 100%;
+
+  .service {
+    font-family: Montserrat, sans-serif;
+    position: relative;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    color: $white;
+
+    &-icon {
+      margin-top: 64px;
+      width: 70px;
+      height: 70px;
+      background-color: $white;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    &-title {
+      border-top: 1px solid $black;
+      line-height: 34px;
+      padding: 20px 0 0;
+      text-transform: uppercase;
+    }
+  }
+}

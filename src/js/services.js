@@ -18,6 +18,11 @@ export function servicesSection() {
             service.setAttribute('class', 'service');
             servicesSection.appendChild(service);
 
+            let img = document.createElement('img');
+            img.setAttribute('src', services[i].src);
+            img.setAttribute('class', 'service-icon');
+            service.appendChild(img);
+
             let title = document.createElement('h3');
             title.setAttribute('class', 'service-title');
             title.innerHTML = services[i].title;
