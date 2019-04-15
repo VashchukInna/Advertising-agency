@@ -8,8 +8,10 @@
   left: 32px;
 
   &-icon {
-    height: 27px;
-    width: 90px;
+    height: 33px;
+    width: 103px;
+    padding: 5px;
+    margin-top: 1px;
   }
 }
 
@@ -50,7 +52,7 @@
         }
       }
 
-      > a {
+      > a:not(.logo) {
         padding: 10px;
         line-height: 30px;
       }
