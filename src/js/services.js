@@ -2,21 +2,21 @@ import services from './data/services';
 
 export function servicesSection() {
     let main = document.getElementById('main-content');
-    let div = document.createElement('div');
-    div.setAttribute('id', 'services');
-    div.setAttribute('class', 'content');
-    main.appendChild(div);
+    let wrapper = document.createElement('div');
+    wrapper.setAttribute('id', 'services');
+    wrapper.setAttribute('class', 'content');
+    main.appendChild(wrapper);
 
-    let servicesSection = document.createElement('div');
-    servicesSection.setAttribute('class', 'services-section');
-    div.appendChild(servicesSection);
+    let section = document.createElement('div');
+    section.setAttribute('class', 'services-section');
+    wrapper.appendChild(section);
 
-    function serviceList() {
+    function servicesList() {
         for (let i = 0; i < services.length; i++) {
 
             let service = document.createElement('div');
             service.setAttribute('class', 'service');
-            servicesSection.appendChild(service);
+            section.appendChild(service);
 
             let img = document.createElement('img');
             img.setAttribute('src', services[i].src);
@@ -35,7 +35,7 @@ export function servicesSection() {
         }
     }
 
-    serviceList();
+    servicesList();
 }
 
 servicesSection();
