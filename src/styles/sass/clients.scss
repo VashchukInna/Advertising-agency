@@ -1,0 +1,27 @@
+@import 'variables';
+
+.clients-section {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: $breaker-bay;
+  padding: 30px;
+
+  .client {
+    display: inline-flex;
+    margin: 5px;
+    background-color: $white;
+    border-radius: 5px;
+
+    &:nth-child(even) {
+      background-color: $green;
+    }
+
+    &-logo {
+      width: 200px;
+      height: 150px;
+      padding: 15px;
+    }
+  }
+}

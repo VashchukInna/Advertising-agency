@@ -3,6 +3,7 @@ import './gallery';
 import './search';
 import './filter';
 import './pagination';
+import './clients';
 
 // show/hide content when clicking on a link
 
