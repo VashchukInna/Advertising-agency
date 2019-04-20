@@ -73,6 +73,12 @@
   }
 }
 
+@media only screen and (min-width: 640px) {
+  .contact-map-info-wrapper {
+    display: flex;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .menu-main {
     padding-right: 30px;

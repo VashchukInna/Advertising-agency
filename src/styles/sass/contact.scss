@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'fonts';
+
+.contact-section {
+  position: relative;
+  background-color: $grey;
+  padding: 15px;
+
+  .contact-map {
+    flex: 3;
+  }
+
+  .map {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-info {
+    flex: 1;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+
+    &-header {
+      text-transform: uppercase;
+    }
+
+    p a {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+}
