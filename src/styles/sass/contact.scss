@@ -19,14 +19,25 @@
     flex: 1;
     font-family: Montserrat, sans-serif;
     text-align: center;
+    padding: 30px 0 30px 0;
 
     &-header {
       text-transform: uppercase;
     }
 
-    p a {
+    .email, .email-link, .phone, .phone-link {
+      color: $burgundy;
       text-decoration: none;
-      color: $black;
+    }
+
+    .email:before {
+      content: '\02709';
+      padding: 2px 6px 2px 2px;
+    }
+
+    .phone:before {
+      content: '\0260E';
+      padding: 2px 6px 2px 2px;
     }
   }
 }

@@ -32,29 +32,23 @@ export function contactSection() {
     infoWrapper.setAttribute('class', 'contact-info');
     mapInfoWrapper.appendChild(infoWrapper);
 
-    let emailHeader = document.createElement('h4');
-    emailHeader.setAttribute('class', 'contact-info-header');
-    emailHeader.innerHTML = 'Email';
-    infoWrapper.appendChild(emailHeader);
-
     let email = document.createElement('p');
+    email.setAttribute('class', 'email');
     infoWrapper.appendChild(email);
 
     let emailLink = document.createElement('a');
     emailLink.setAttribute('href', 'mailto:native@gmail.com');
+    emailLink.setAttribute('class', 'email-link');
     emailLink.innerHTML = 'native@gmail.com';
     email.appendChild(emailLink);
 
-    let phoneHeader = document.createElement('h4');
-    phoneHeader.setAttribute('class', 'contact-info-header');
-    phoneHeader.innerHTML = 'Phone';
-    infoWrapper.appendChild(phoneHeader);
-
     let phone = document.createElement('p');
+    phone.setAttribute('class', 'phone');
     infoWrapper.appendChild(phone);
 
     let phoneLink = document.createElement('a');
-    phoneLink.setAttribute('href', '"tel:+46868441109');
+    phoneLink.setAttribute('href', 'tel:+46868441109');
+    phoneLink.setAttribute('class', 'phone-link');
     phoneLink.innerHTML = '+468-68 44 11 09';
     phone.appendChild(phoneLink);
 
