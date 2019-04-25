@@ -1,0 +1,62 @@
+@import 'variables';
+@import 'fonts';
+
+.contact-form-header {
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: $black;
+
+  &::after {
+    content: '';
+    display: block;
+    border-top: 2px solid $dark-cyan;
+    width: 100px;
+    margin: 15px auto 0;
+  }
+}
+
+.form {
+  width: 50%;
+  padding: 30px 0;
+  background-color: $dark-desaturated-cyan;
+  margin: 0 auto;
+  border-radius: 15px;
+
+  &-list {
+    text-align: center;
+  }
+
+  input, textarea {
+    width: 75%;
+    margin: 15px 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    border-bottom: 1px solid $strong-cyan;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: $very-dark-grey;
+    outline: none;
+    color: $white;
+  }
+
+  button {
+    border: 1px solid $strong-cyan;
+    background-color: $very-dark-grey;
+    color: $strong-cyan;
+    font-family: Montserrat, sans-serif;
+    font-size: 112.5%;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: .4s;
+
+    &:hover {
+      background-color: $cyan;
+      color: $white;
+    }
+  }
+}
