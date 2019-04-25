@@ -42,6 +42,10 @@
     color: $white;
   }
 
+  textarea {
+    height: 90px;
+  }
+
   button {
     border: 1px solid $strong-cyan;
     background-color: $very-dark-grey;

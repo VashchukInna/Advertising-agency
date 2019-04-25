@@ -5,6 +5,7 @@ import './filter';
 import './pagination';
 import './clients';
 import './contact';
+import './contact-form';
 
 // show/hide content when clicking on a link
 
