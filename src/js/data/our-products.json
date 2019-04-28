@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "src": "../../images/products/product_1.png",
+    "title": "Pocket calendar",
+    "price": "$28.99"
+  },
+  {
+    "id": 2,
+    "src": "../../images/products/product_2.png",
+    "title": "Wall calendar",
+    "price": "$30.90"
+  },
+  {
+    "id": 3,
+    "src": "../../images/products/product_3.png",
+    "title": "Notebook",
+    "price": "$37.99"
+  },
+  {
+    "id": 4,
+    "src": "../../images/products/product_4.png",
+    "title": "Branded pen",
+    "price": "$7.99"
+  },
+  {
+    "id": 5,
+    "src": "../../images/products/product_5.png",
+    "title": "Branded cup",
+    "price": "$4.99"
+  }
+]

@@ -1,3 +1,4 @@
+import './our-products';
 import './services';
 import './gallery';
 import './search';
