@@ -3,7 +3,7 @@
     "id": 1,
     "src": "../../images/products/product_1.png",
     "title": "Pocket calendar",
-    "price": "$28.99"
+    "price": "$1.99"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "id": 3,
     "src": "../../images/products/product_3.png",
     "title": "Notebook",
-    "price": "$37.99"
+    "price": "$19.99"
   },
   {
     "id": 4,
@@ -28,5 +28,47 @@
     "src": "../../images/products/product_5.png",
     "title": "Branded cup",
     "price": "$4.99"
+  },
+  {
+    "id": 6,
+    "src": "../../images/products/product_6.png",
+    "title": "Laminated menu",
+    "price": "$11.80"
+  },
+  {
+    "id": 7,
+    "src": "../../images/products/product_7.png",
+    "title": "Business card",
+    "price": "$5.99"
+  },
+  {
+    "id": 8,
+    "src": "../../images/products/product_8.png",
+    "title": "Catalog",
+    "price": "$6.88"
+  },
+  {
+    "id": 9,
+    "src": "../../images/products/product_9.png",
+    "title": "Flyer",
+    "price": "$12.99"
+  },
+  {
+    "id": 10,
+    "src": "../../images/products/product_10.png",
+    "title": "Magnets",
+    "price": "$1.99"
+  },
+  {
+    "id": 11,
+    "src": "../../images/products/product_11.png",
+    "title": "Plaque",
+    "price": "$10.99"
+  },
+  {
+    "id": 12,
+    "src": "../../images/products/product_12.png",
+    "title": "Plastic card",
+    "price": "$1.00"
   }
 ]
