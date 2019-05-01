@@ -11,11 +11,29 @@ export function ourProducts() {
     section.setAttribute('class', 'our-products-section');
     wrapper.appendChild(section);
 
+    let sortByPrice = document.createElement('div');
+    sortByPrice.setAttribute('class', 'sort-by-price');
+    section.appendChild(sortByPrice);
+
+    let sortAscendingBtn = document.createElement('button');
+    sortAscendingBtn.setAttribute('class', 'sort-ascending');
+    sortAscendingBtn.innerHTML = 'Sort by Price: Low to High';
+    sortByPrice.appendChild(sortAscendingBtn);
+
+    let sortDescendingBtn = document.createElement('button');
+    sortDescendingBtn.setAttribute('class', 'sort-descending');
+    sortDescendingBtn.innerHTML = 'Sort by Price: High to Low';
+    sortByPrice.appendChild(sortDescendingBtn);
+
+    let productsWrapper = document.createElement('div');
+    productsWrapper.setAttribute('class', 'products');
+    section.appendChild(productsWrapper);
+
     function listOfProducts() {
         for (let i = 0; i < products.length; i++) {
             let product = document.createElement('div');
             product.setAttribute('class', 'product');
-            section.appendChild(product);
+            productsWrapper.appendChild(product);
 
             let img = document.createElement('img');
             img.setAttribute('src', products[i].src);

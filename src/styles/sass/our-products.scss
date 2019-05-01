@@ -9,6 +9,32 @@
   background-color: $grey;
   padding: 10px;
 
+  .sort-by-price, .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sort-ascending, .sort-descending {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    margin: 8px;
+    background-color: $desaturated-dark-blue;
+    border: 2px solid $desaturated-dark-blue;
+    color: $white;
+    border-radius: 15px;
+    padding: 8px 13px;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+
+    &:hover {
+      background-color: $dark-blue;
+      border: 2px solid $dark-blue;
+      transition: all 0.2s linear;
+    }
+  }
+
   .product {
     display: inline-flex;
     flex-direction: column;
@@ -38,6 +64,10 @@
         width: 85px;
         padding: 8px;
         text-align: center;
+
+        &::before {
+          content: '$';
+        }
       }
 
       .add-to-cart {
@@ -49,6 +79,10 @@
         font-family: Montserrat, sans-serif;
         font-weight: bold;
         text-transform: uppercase;
+
+        &:hover {
+          color: $green;
+        }
       }
     }
   }
