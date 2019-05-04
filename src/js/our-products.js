@@ -1,6 +1,6 @@
 import products from './data/our-products';
 
-export function ourProducts() {
+export function ourProductsSection() {
     let main = document.getElementById('main-content');
     let wrapper = document.createElement('div');
     wrapper.setAttribute('id', 'our-products');
@@ -66,4 +66,4 @@ export function ourProducts() {
     listOfProducts();
 }
 
-ourProducts();
+ourProductsSection();
