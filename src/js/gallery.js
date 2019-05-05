@@ -7,7 +7,6 @@ export function search() {
     portfolio.setAttribute('class', 'content');
     main.appendChild(portfolio);
 
-
     let portfolioSearchFilter = document.createElement('div');
     portfolioSearchFilter.setAttribute('class', 'portfolio-search-filter');
     portfolio.appendChild(portfolioSearchFilter);
@@ -115,11 +114,11 @@ export function gallery() {
     project();
 
     let modalWindow = document.createElement('div');
-    modalWindow.setAttribute('class', 'modal-window');
-    portfolioSection.appendChild(modalWindow);
+    modalWindow.setAttribute('class', 'portfolio-modal-window');
+    portfolio.appendChild(modalWindow);
 
     let modalWindowInner = document.createElement('div');
-    modalWindowInner.setAttribute('class', 'modal-window-inner');
+    modalWindowInner.setAttribute('class', 'modal-window');
     modalWindow.appendChild(modalWindowInner);
 
     let closeWindow = document.createElement('button');
@@ -138,8 +137,8 @@ gallery();
 
 // open/close modal window
 
-const image = document.querySelectorAll('.project');
-const modalWindow = document.querySelector('.modal-window');
+const project = document.querySelectorAll('.project');
+const modalWindow = document.querySelector('.portfolio-modal-window');
 const modalWindowImage = document.querySelector('.modal-window-image');
 
 export function openModalWindow(_) {
@@ -151,7 +150,7 @@ export function closeModalWindow() {
     modalWindow.classList.remove('open-modal-window');
 }
 
-image.forEach(image => image.addEventListener('click', openModalWindow));
+project.forEach(project => project.addEventListener('click', openModalWindow));
 modalWindow.addEventListener('click', closeModalWindow);
 
 export function pagination() {

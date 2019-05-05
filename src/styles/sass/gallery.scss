@@ -38,7 +38,7 @@
   }
 }
 
-.modal-window {
+.portfolio-modal-window {
   position: fixed;
   background: rgba($black, 0.6);
   display: none;
@@ -48,11 +48,15 @@
   left: 0;
   z-index: 2;
 
-  &-inner {
+  .modal-window {
     position: relative;
     background-color: $silver;
     width: 51.5%;
     padding: 15px;
+
+    &-image {
+      width: 100%;
+    }
 
     .close-window {
       position: absolute;
@@ -62,10 +66,6 @@
       background: none;
       border: 0;
       outline: none;
-    }
-
-    .modal-window-image {
-      width: 100%;
     }
   }
 }
