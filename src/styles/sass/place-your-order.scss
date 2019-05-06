@@ -1,0 +1,113 @@
+@import 'variables';
+@import 'fonts';
+
+.place-your-order-section {
+  position: relative;
+  background-color: $dark-grayish-cyan;
+  padding: 15px;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+
+  .cart-header {
+    display: flex;
+
+    h3 {
+      color: rgba($black, 0.6);
+      text-transform: uppercase;
+      border-bottom: 1px solid $black;
+    }
+  }
+
+  .cart-item, .cart-price, .cart-quantity {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 10px;
+    width: 33%;
+    justify-content: center;
+  }
+
+  .cart-items {
+    .cart-item-wrapper {
+      display: flex;
+      border-bottom: 1px solid $black;
+      margin: 10px;
+
+      .cart-item-image {
+        width: 90px;
+        height: 110px;
+      }
+
+      .cart-item-title {
+        width: 50%;
+      }
+
+      .cart-price {
+        font-weight: bold;
+
+        &::before {
+          content: '$';
+        }
+      }
+
+      .cart-quantity {
+        &-input {
+          font-family: Montserrat, sans-serif;
+          font-size: 15px;
+          width: 54px;
+          height: 8px;
+          background-color: $light-grey;
+          border: none;
+          padding: 10px;
+          border-radius: 15px;
+          outline: none;
+          text-align: center;
+        }
+
+        .remove-btn {
+          border: none;
+          color: rgba($black, 0.6);
+          outline: none;
+          text-decoration: underline;
+          background: none;
+          cursor: pointer;
+          text-transform: uppercase;
+          margin: 10px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .cart-total {
+    text-align: right;
+    margin: 15px;
+    font-weight: bold;
+
+    &-title {
+      text-transform: uppercase;
+      padding: 10px;
+    }
+
+    &-price {
+      padding: 10px;
+    }
+  }
+
+  .place-an-order-btn {
+    background-color: $green;
+    text-transform: uppercase;
+    outline: none;
+    padding: 15px;
+    border-radius: 15px;
+    color: $white;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $very-dark-desaturated-cyan;
+    }
+  }
+}

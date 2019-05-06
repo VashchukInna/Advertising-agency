@@ -9,7 +9,6 @@ export function placeYourOrderSection() {
     section.setAttribute('class', 'place-your-order-section');
     wrapper.appendChild(section);
 
-    //cart
     let cartHeader = document.createElement('div');
     cartHeader.setAttribute('class', 'cart-header');
     section.appendChild(cartHeader);
@@ -48,7 +47,7 @@ export function placeYourOrderSection() {
     cartTotal.appendChild(cartTotalPrice);
 
     let button = document.createElement('button');
-    button.setAttribute('class', 'place-an-order-button');
+    button.setAttribute('class', 'place-an-order-btn');
     button.setAttribute('type', 'button');
     button.innerHTML = 'Place an order';
     section.appendChild(button);
@@ -75,7 +74,7 @@ export function init() {
         removeItemButton.addEventListener('click', removeCartItem);
     }
 
-    document.getElementsByClassName('place-an-order-button')[0].addEventListener('click', placeAnOrder);
+    document.getElementsByClassName('place-an-order-btn')[0].addEventListener('click', placeAnOrder);
 }
 
 init();

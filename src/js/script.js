@@ -7,7 +7,7 @@ import './filter';
 import './pagination';
 import './clients';
 import './contact';
-import './cart';
+import './place-your-order';
 import './contact-form';
 
 // show/hide content when clicking on a link
