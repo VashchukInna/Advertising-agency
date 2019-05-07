@@ -49,6 +49,15 @@
         &:not(:last-child) {
           border-right: none;
         }
+
+        &:nth-child(2) > a {
+          margin-right: -22px;
+
+          &::after {
+            content: '\25bc';
+            padding: 9px;
+          }
+        }
       }
     }
   }
