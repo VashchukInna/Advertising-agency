@@ -108,4 +108,18 @@
   .close-window {
     margin-right: -2px;
   }
+
+  .place-your-order-section {
+    padding: 0;
+  }
+
+  .place-your-order-section .cart-items .cart-item-wrapper .cart-item-image {
+    width: 100%;
+  }
+
+  .cart-item-wrapper {
+    .cart-price, .cart-item-title, .remove-btn {
+      font-size: 10px;
+    }
+  }
 }
