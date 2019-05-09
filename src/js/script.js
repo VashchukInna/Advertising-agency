@@ -1,3 +1,4 @@
+import './about-us';
 import './our-products';
 import './sort';
 import './services';

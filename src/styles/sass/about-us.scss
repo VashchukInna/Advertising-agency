@@ -1,0 +1,25 @@
+@import 'variables';
+@import 'fonts';
+
+.about-us-section {
+  position: relative;
+  padding: 50px;
+  background-image: url('../../images/about-us.png');
+  background-size: cover;
+  filter: brightness(90%);
+  font-family: Montserrat, sans-serif;
+
+  .about-us-title {
+    font-weight: bold;
+    font-size: 28px;
+    color: $very-dark-blue;
+  }
+
+  .about-us-info {
+    width: 50%;
+    text-align: justify;
+    line-height: 28px;
+    color: $white;
+    font-size: 20px;
+  }
+}
