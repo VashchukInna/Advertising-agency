@@ -43,6 +43,7 @@ export function placeYourOrderSection() {
 
     let cartTotalPrice = document.createElement('span');
     cartTotalPrice.setAttribute('class', 'cart-total-price');
+    cartTotalPrice.setAttribute('id', 'cart-total-price');
     cartTotalPrice.innerHTML = '$0';
     cartTotal.appendChild(cartTotalPrice);
 
@@ -80,7 +81,12 @@ export function init() {
 init();
 
 export function placeAnOrder() {
-    alert('Thank you for your purchase!');
+    let cartTotalPrice = document.getElementById('cart-total-price').innerHTML;
+    if (cartTotalPrice !== '$0') {
+        alert('Thank you for your purchase!');
+    } else {
+        alert('There are no items in your shopping cart');
+    }
     let cartItems = document.getElementsByClassName('cart-items')[0];
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild);
